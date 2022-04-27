@@ -5,6 +5,7 @@ if [ ! -d $doc_dir ]; then
   mkdir $doc_dir
 fi
 
+
 touch ./doc/push.sh
 echo "#!/bin/bash
 if [ $# -eq 0 ]
@@ -21,6 +22,7 @@ git status;
 git add -A; 
 git commit -m "${pushmessage}";
 git push -u origin main;" > ./doc/push.sh
+
 
 chmod +x ./doc/push.sh
 
