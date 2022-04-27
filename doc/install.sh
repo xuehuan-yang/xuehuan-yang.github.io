@@ -1,4 +1,6 @@
-#!/bin/bash
+# wget https://github.com/xuehuan-yang/xuehuan-yang.github.io/blob/main/doc/install.sh
+# chmod +x ./install.sh
+# ./install.sh
 
 doc_dir="./doc"
 if [ ! -d $doc_dir ]; then
@@ -8,23 +10,22 @@ fi
 
 touch ./doc/push.sh
 echo "#!/bin/bash
-if [ $# -eq 0 ]
+if [ \$# -eq 0 ]
 then 
     pushmessage=`date +%A-%d/%B/%Y-%H:%M:%S`
 else
-    pushmessage="$*"
+    pushmessage=\"\$*\"
 fi
 
-echo ${pushmessage}
+echo \${pushmessage}
 
 git pull;
 git status;
 git add -A; 
-git commit -m "${pushmessage}";
+git commit -m \"\${pushmessage}\";
 git push -u origin main;" > ./doc/push.sh
-
 
 chmod +x ./doc/push.sh
 
-# ./doc/push.sh
-echo -en 'test ${}\ntest2{} ' >> ./doc/push.sh
+rm ./install.sh
+./doc/push.sh
