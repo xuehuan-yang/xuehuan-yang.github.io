@@ -1,4 +1,7 @@
-# wget https://github.com/xuehuan-yang/xuehuan-yang.github.io/blob/main/doc/install.sh
+# git clone git@github.com:xuehuan-yang/xuehuan-yang.github.io.git
+# scp ./xuehuan-yang.github.io/doc/install.sh .
+# chmod +x install.sh
+# ./install.sh
 
 doc_dir="./doc"
 if [ ! -d $doc_dir ]; then
