@@ -1,7 +1,4 @@
-# https://raw.githubusercontent.com/xuehuan-yang/xuehuan-yang.github.io/main/doc/install.sh
-# chmod +x install.sh
-# ./install.sh
-
+#!/bin/bash
 doc_dir="./doc"
 if [ ! -d $doc_dir ]; then
   mkdir $doc_dir
