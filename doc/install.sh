@@ -1,5 +1,4 @@
-# git clone git@github.com:xuehuan-yang/xuehuan-yang.github.io.git
-# scp ./xuehuan-yang.github.io/doc/install.sh .
+# https://raw.githubusercontent.com/xuehuan-yang/xuehuan-yang.github.io/main/doc/install.sh
 # chmod +x install.sh
 # ./install.sh
 
