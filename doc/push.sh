@@ -1,11 +1,13 @@
 #!/bin/bash
 if [ $# -eq 0 ]
 then 
-	pushmessage=`date +%A-%d/%B/%Y-%H:%M:%S`
+    pushmessage=`date +%A-%d/%B/%Y-%H:%M:%S`
 else
-		pushmessage="$*"
+    pushmessage="$*"
 fi
+
 echo ${pushmessage}
+
 git pull;
 git status;
 git add -A; 
