@@ -1,6 +1,4 @@
 # wget https://github.com/xuehuan-yang/xuehuan-yang.github.io/blob/main/doc/install.sh
-# chmod +x ./install.sh
-# ./install.sh
 
 doc_dir="./doc"
 if [ ! -d $doc_dir ]; then
