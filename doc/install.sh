@@ -4,8 +4,8 @@ if [ ! -d $doc_dir ]; then
   mkdir $doc_dir
 fi
 
-
 touch ./doc/push.sh
+
 echo "#!/bin/bash
 if [ \$# -eq 0 ]
 then 
@@ -24,5 +24,5 @@ git push -u origin main;" > ./doc/push.sh
 
 chmod +x ./doc/push.sh
 
-rm ./install.sh
 ./doc/push.sh
+rm ./install.sh
